@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title><link href="https://fonts.googleapis.com/css?family=Sankofa+Display:regular" rel="stylesheet" />
+</head>
+<style>
+    *{
+        font-family: Sankofa+Display;
+    }
+    .card {
+        /*border: 3px solid black;*/
+        height: 300px;
+        width: 200px;
+        border-radius: 12px;
+        padding: 50px;
+        box-shadow: 5px 5px 12px 2px rgb(25, 24, 24);
+
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .formtitle {
+        font-family: Sankofa+Display;
+        text-align: center;
+    }
+    .text-input,.submit-btn{
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+
+    }
+    .text-input{
+        margin: 5px 10px;
+        margin-bottom: 20px;
+    }
+    .submit-btn{
+        background-color: rgb(0, 0, 0);
+        color: azure;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .link{
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin: 20px 0px ;
+
+
+    }
+    .link1{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="card">
+            <h4 class="formtitle">Login Here</h4>
+            <label>Email Address</label>
+            <input class="text-input" type="text">
+            <label>Password</label>
+            <input class="text-input" type="password">
+            <a  class="link"href="#">Forget Password ?</a>
+            <button class="submit-btn">Submit</button>
+            <a class="link link1" href="#">Create Account</a>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
