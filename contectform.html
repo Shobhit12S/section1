@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head><link href="https://fonts.googleapis.com/css?family=Grey+Qo:regular" rel="stylesheet" />
+<style>
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /*background-color: rgb(171, 92, 166);
+        background-image: linear-gradient(20deg,rgb(0, 255, 34),white,rgb(227, 79, 20));*/
+        background-image: url('https://i.pinimg.com/736x/c4/49/5a/c4495a17fab6a40f10d0e0beca69f849.jpg');
+    }
+    .contact-form {
+        height: 400px;
+        width: 300px;
+        border-radius: 12px;
+        padding: 50px;
+        box-shadow: 5px 5px 12px 2px rgb(22, 21, 21);
+        background-color: rgb(173, 144, 144);
+    }
+    .fname{
+        margin: 5px 10px;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+    .Message{
+        border-radius: 10px;
+        margin: 10px;
+        border: 2px solid black;
+        background-color: white;
+    }
+    .h1{
+        text-align: center;
+    }
+    .option{
+        margin: 30px;
+    }
+    .submit-btn{
+        background-color: rgb(8, 8, 8);
+        color: azure;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px 5px;
+    }
+    body{
+        margin: 0px;
+    }
+</style>
+<body>
+    <main>
+    <div class="contact-form">
+        <h1 class="h1">Contact Form</h1>
+        <label>First name</label>
+        <input type="text"  class="fname">
+        <label>Last name</label>
+        <input type="text" class="fname">
+        <label>Country</label>
+        <select class="option">
+            <option>INDIA</option>
+            <option>USA</option>
+            <option>JAPAN</option>
+            <option>THILAND</option>
+        </select>
+        <textarea rows="6" class="Message" >Message</textarea>
+        <br>
+        <button class="submit-btn">Submit</button>
+    </div>
+</main>
+</body>
+</html>
