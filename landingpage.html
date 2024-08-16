@@ -10,9 +10,10 @@
     href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
     rel="stylesheet" />
 <style>
-    *{
+    * {
         font-family: Montserrat;
     }
+
     .herosec {
         height: 65vh;
         display: flex;
@@ -21,7 +22,7 @@
         flex-direction: column;
         padding: 0 20%;
         text-align: center;
-        background-image:url('https://hdqwalls.com/wallpapers/minimalist-mountains-19.jpg') ;
+        background-image: url('https://th.bing.com/th/id/OIP.YPVKWMykmnVx92ta9YUcogHaEK?rs=1&pid=ImgDetMain');
         background-size: cover;
 
     }
@@ -35,22 +36,77 @@
         font-size: 50px;
 
     }
-    .btn{
+
+    .btn {
         padding: 10px;
         border: none;
         border-radius: 5px;
     }
-    .primary-btn{
-         background-color: rgb(72, 62, 211);
-         color: white;
-         border: 2px solid rgb(72, 62, 211);
+
+    .primary-btn {
+        background-color: rgb(72, 62, 211);
+        color: white;
+        border: 2px solid rgb(72, 62, 211);
     }
-    .secondary-btn{
+
+    .secondary-btn {
         background-color: rgb(221, 237, 237);
         color: rgb(72, 62, 211);
         border: 2px solid rgb(72, 62, 211);
     }
+
+    .feature-section {
+        padding: 100px 200px;
+    }
+
+    .card {
+        border-radius: 15px;
+        width: 300px;
+        padding: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: 2px 3px 2px 0 black;
+
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        /*height: 50vh;
+        align-items: flex-start;*/
+    }
+
+    .card:hover {
+        transform: translate(-20px, -30px);
+        background-color: black;
+        color: white;
+    }
+
+    .feature-section {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .services-sec {
+        border: 3px solid green;
+        padding: 200px 300px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .service-img{
+        border: 3px solid rgb(22, 24, 22);
+    }
+    .service-info{
+        border: 3px solid blue;
+    }
+    .service-img img{
+        width: 100%;
+    }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
     <main>
@@ -63,6 +119,47 @@
                 <button class="btn primary-btn">Get Started</button>
                 <button class="btn secondary-btn">Learn More</button>
             </div>
+        </section>
+        <section class="feature-section">
+            <h1 clas="section-title">Our Feature</h1>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-3x"></i>
+                    <H2>Fast Solution</H2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nulla voluptatem quaerat atque
+                        quod officia.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-3x"></i>
+                    <H2>Fast Solution</H2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nulla voluptatem quaerat atque
+                        quod officia.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-3x"></i>
+                    <H2>Fast Solution</H2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nulla voluptatem quaerat atque
+                        quod officia.</p>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section class="services-sec">
+            <div class="service-img">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/560/029/original/customer-service-woman-with-headphones-and-microphone-with-laptop-concept-illustration-for-support-call-center-vector.jpg"
+                    alt="">
+            </div>
+            <div class="service-info">
+                <h3>Service title 1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sit consectetur facilis repellendus
+                    quasi?</p>
+                    <button class="btn primary-btn">Learn more</button>
+
+            </div>
+
         </section>
     </main>
     <footer>
