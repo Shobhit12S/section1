@@ -30,6 +30,11 @@ console.log(movie);
 movie.shift()//remove from start
 movie.pop()//remove from ending
 console.log(movie);
+//console.log(movie.splice(2,2));
+movie.splice(2,2,"kalki","OMG");
+console.log(movie);
+
+
 
 
 
